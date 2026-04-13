@@ -1,73 +1,79 @@
-# React + TypeScript + Vite
+# 🖥️ TERMINAL_OS // Portfolio MR
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> **Mauricio Ribotta** — Software Technician & Product Owner Hybrid.
 
-Currently, two official plugins are available:
+Welcome to my personal portfolio. Designed to look and feel like a brutalist retro-terminal or specialized compiler interface. Built completely from the ground up as a high-performance **Single Page Application (SPA)**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+![Status: Stable](https://img.shields.io/badge/System_Status-Stable-00FF41?style=for-the-badge&logoColor=black)
+![React 19](https://img.shields.io/badge/React-19-61dafb?style=for-the-badge&logo=react&logoColor=black)
+![Vite](https://img.shields.io/badge/Vite-8.0-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![Tailwind V4](https://img.shields.io/badge/Tailwind_CSS-V4-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-Ready-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ⚡ Tech Stack & Architecture
 
-## Expanding the ESLint configuration
+- **Frontend Core**: React 19 + TypeScript + Vite.
+- **Routing**: `react-router-dom` v7 handling an internally fully routed component structure (`/about`, `/projects`, `/experience`, `/skills`, `/contact`).
+- **Styling**: Tailwind CSS V4 for a hyper-specialized dark mode theme mimicking a code editor terminal environment. Strict usage of `hsl/hex` color palettes without rounded borders (`border-radius: 0px` globally).
+- **Design Metaphor**: Brutalism combined with terminal-grade functional aesthetics (`#00FF41` classic hacker green, `#FFA504` warning amber).
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 📂 Project Structure
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+ROOT/
+├── index.html            # Main Entry Point with Global Metatags & Layout Overlays
+├── public/               
+│   └── CV_Mauricio_Ribotta.pdf # Publicly hosted CV File
+├── src/
+│   ├── components/       # Reusable UI Blocks
+│   │   └── layout/       # App Shell: TopNavBar, Footer, AppLayout
+│   ├── pages/            # View Components
+│   │   ├── Hero.tsx      # Landing Section
+│   │   ├── About.tsx     # Profile & Origin Story
+│   │   ├── Projects.tsx  # Interactive Showcase
+│   │   ├── Experience.tsx# Timeline / Logs
+│   │   ├── Skills.tsx    # Hardware/Software Metric Bars
+│   │   └── Contact.tsx   # Secured Terminal Form
+│   ├── App.tsx           # Inner Routing Maps
+│   ├── main.tsx          # React Injection Root
+│   └── index.css         # Tailwind directives and visual tokens
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🚀 Execution & Setup
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+To boot this terminal environment locally:
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/MauriicioRibotta/portfolioMR.git 
+   cd portfolioMR
+   ```
+
+2. **Install node modules**:
+   ```bash
+   npm install
+   ```
+
+3. **Ignite the server**:
+   ```bash
+   npm run dev
+   ```
+
+4. **Production Build**:
+   ```bash
+   npm run build
+   ```
+
+## 🎨 UI/UX Features
+
+- **Scanlines**: Pure CSS overlays to simulate old CRT screens. 
+- **Monospaced Fonts**: Heavy reliance on `JetBrains Mono` and `Space Grotesk` to execute the code-compiler presentation.
+- **Blinking Cursors**: CSS keyframe animations for standard terminal indicators.
+- **No-Radius Policy**: Sharp corners everywhere inside the app for maximum structural brutalism.
+- **Responsive**: Adapts gracefully up seamlessly from a mobile CLI feel up to wide-monitor dual-split panels.
+
+---
+> *(C) 2024 TERMINAL_OS [BUILD_429]*
+> IP: 127.0.0.1 // ADMIN_OPERATOR: Mauricio Ribotta
