@@ -1,13 +1,17 @@
+import { useLanguage } from '../i18n/LanguageContext';
+
 export function Skills() {
+  const { t } = useLanguage();
+
   return (
     <div className="w-full">
       {/* Hero Header */}
       <header className="mb-16">
         <h1 className="font-mono text-4xl md:text-6xl font-extrabold text-primary-container tracking-tighter mb-4 uppercase">
-          &gt;_SYSTEM_CAPABILITIES
+          {t('skills.title')}
         </h1>
         <p className="text-on-surface-variant font-mono text-sm uppercase tracking-widest">
-          [SECTION: SKILLS_AND_STACK] // [STATUS: DEPLOYED]
+          {t('skills.subtitle')}
         </p>
       </header>
 
@@ -18,11 +22,10 @@ export function Skills() {
           <div className="absolute top-0 left-0 w-1 h-full bg-primary-container"></div>
           <div className="flex items-center gap-3 mb-10">
             <span className="material-symbols-outlined text-primary-container" style={{ fontVariationSettings: "'FILL' 1" }}>code</span>
-            <h2 className="font-mono text-xl font-bold uppercase tracking-tight text-primary">Dev Skills</h2>
+            <h2 className="font-mono text-xl font-bold uppercase tracking-tight text-primary">{t('skills.dev_title')}</h2>
           </div>
 
           <div className="space-y-8">
-            {/* Skill Item */}
             <div>
               <div className="flex justify-between mb-2 font-mono text-xs uppercase tracking-tighter">
                 <span className="text-on-surface">JavaScript/TypeScript</span>
@@ -79,7 +82,7 @@ export function Skills() {
           <div className="mt-12 bg-surface-container-lowest p-4">
             <p className="font-mono text-[10px] text-on-surface-variant leading-relaxed">
               // ADDITIONAL_STACK_LOG:<br/>
-              DOCKER, KUBERNETES, AWS_S3, TRPC, PRISMA, TAILWIND_CSS, VITEST
+              {t('skills.dev_additional')}
             </p>
           </div>
         </section>
@@ -89,7 +92,7 @@ export function Skills() {
           <div className="absolute top-0 left-0 w-1 h-full bg-secondary-container"></div>
           <div className="flex items-center gap-3 mb-10">
             <span className="material-symbols-outlined text-secondary-container" style={{ fontVariationSettings: "'FILL' 1" }}>inventory_2</span>
-            <h2 className="font-mono text-xl font-bold uppercase tracking-tight text-primary">Product Owner Skills</h2>
+            <h2 className="font-mono text-xl font-bold uppercase tracking-tight text-primary">{t('skills.po_title')}</h2>
           </div>
 
           <div className="space-y-8">
@@ -149,7 +152,7 @@ export function Skills() {
           <div className="mt-12 bg-surface-container-lowest p-4">
             <p className="font-mono text-[10px] text-on-surface-variant leading-relaxed">
               // PRODUCT_MGMT_LOG:<br/>
-              USER_STORIES, ROADMAPPING, KPI_TRACKING, A/B_TESTING, MIRO, FIGMA
+              {t('skills.po_additional')}
             </p>
           </div>
         </section>
@@ -157,7 +160,7 @@ export function Skills() {
         {/* Bottom Tech Visual Block */}
         <section className="lg:col-span-12 grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="bg-surface-container-high p-6">
-            <div className="text-primary-container font-mono text-xs mb-4">LOG_STREAM_01</div>
+            <div className="text-primary-container font-mono text-xs mb-4">{t('skills.log_stream')}</div>
             <div className="space-y-1">
               <div className="w-full h-1 bg-primary-container/20 overflow-hidden">
                 <div className="w-2/3 h-full bg-primary-container"></div>
@@ -169,17 +172,17 @@ export function Skills() {
                 <div className="w-4/5 h-full bg-primary-container"></div>
               </div>
             </div>
-            <p className="mt-4 font-mono text-[9px] text-on-surface-variant uppercase">Optimizing core throughput...</p>
+            <p className="mt-4 font-mono text-[9px] text-on-surface-variant uppercase">{t('skills.optimizing')}</p>
           </div>
 
           <div className="bg-surface-container-high p-6 flex flex-col justify-center items-center text-center">
-            <h3 className="font-mono text-lg font-bold text-on-surface mb-2 uppercase">Hybrid Profile</h3>
-            <p className="text-xs text-on-surface-variant leading-tight font-body">Bridging technical architecture with strategic product vision since 2018.</p>
+            <h3 className="font-mono text-lg font-bold text-on-surface mb-2 uppercase">{t('skills.hybrid_title')}</h3>
+            <p className="text-xs text-on-surface-variant leading-tight font-body">{t('skills.hybrid_text')}</p>
           </div>
 
           <div className="bg-surface-container-high p-6 flex items-center justify-between">
             <div>
-              <div className="text-secondary-container font-mono text-xs mb-1">SYSTEM_UPTIME</div>
+              <div className="text-secondary-container font-mono text-xs mb-1">{t('skills.uptime_label')}</div>
               <div className="font-mono text-2xl font-bold text-primary">99.98%</div>
             </div>
             <div className="h-12 w-12 border border-primary-container/30 flex items-center justify-center">
@@ -198,12 +201,12 @@ export function Skills() {
           <span className="ml-2 text-[10px] opacity-50">console@root: ~/skills</span>
         </div>
         <div>
-          <p className="text-primary-container">$ analyze --profile hybrid</p>
-          <p className="mt-2 text-[#00FF41]/80">&gt;&gt; Loading kernel modules...</p>
-          <p className="text-[#00FF41]/80">&gt;&gt; DevStack verified: 12 modules active.</p>
-          <p className="text-[#00FF41]/80">&gt;&gt; ProductStack verified: 8 modules active.</p>
-          <p className="text-secondary-container">&gt;&gt; Warning: Coffee levels critical.</p>
-          <p className="mt-2 text-on-surface">Analysis complete. System ready for full-stack engagement.</p>
+          <p className="text-primary-container">{t('skills.terminal_cmd')}</p>
+          <p className="mt-2 text-[#00FF41]/80">{t('skills.terminal_log1')}</p>
+          <p className="text-[#00FF41]/80">{t('skills.terminal_log2')}</p>
+          <p className="text-[#00FF41]/80">{t('skills.terminal_log3')}</p>
+          <p className="text-secondary-container">{t('skills.terminal_warning')}</p>
+          <p className="mt-2 text-on-surface">{t('skills.terminal_done')}</p>
           <div className="mt-4 flex items-center gap-1">
             <span>$</span>
             <span className="w-2 h-4 bg-primary-container animate-pulse"></span>
