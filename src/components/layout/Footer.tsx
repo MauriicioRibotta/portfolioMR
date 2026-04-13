@@ -5,9 +5,8 @@ export function Footer() {
         (C) {new Date().getFullYear()} TERMINAL_OS [BUILD_429]
       </div>
       <div className="flex gap-6">
-        <a className="text-[#b9ccb2] hover:text-[#00FF41] cursor-pointer animate-pulse-slow" href="#">GITHUB</a>
-        <a className="text-[#b9ccb2] hover:text-[#00FF41] cursor-pointer" href="#">LINKEDIN</a>
-        <a className="text-[#b9ccb2] hover:text-[#00FF41] cursor-pointer" href="#">RSS</a>
+        <a className="text-[#b9ccb2] hover:text-[#00FF41] cursor-pointer animate-pulse-slow" href="https://github.com/MauriicioRibotta">GITHUB</a>
+        <a className="text-[#b9ccb2] hover:text-[#00FF41] cursor-pointer" href="https://www.linkedin.com/in/mauricio-ribotta-83139327a/">LINKEDIN</a>
       </div>
       <div className="text-[#ffa504] flex items-center gap-2">
         <span className="w-2 h-2 bg-[#ffa504]"></span>

@@ -7,7 +7,7 @@ export function Contact() {
           &gt;_ ESTABLISH_CONNECTION
         </h1>
         <p className="font-mono text-on-surface-variant text-sm md:text-base max-w-2xl">
-          // INITIALIZING SECURE COMMUNICATION PROTOCOL...<br/>
+          // INITIALIZING SECURE COMMUNICATION PROTOCOL...<br />
           // READY FOR INPUT. PLEASE DEFINE PARAMETERS BELOW.
         </p>
       </header>
@@ -71,36 +71,36 @@ export function Contact() {
           <div className="space-y-8">
             <div>
               <h3 className="font-mono text-xs font-bold text-secondary-container mb-4 uppercase tracking-widest">// RESOURCE_DOWNLOADS</h3>
-              <button className="w-full bg-surface-container-high hover:bg-surface-container-highest transition-colors flex items-center justify-between p-4 font-mono text-xs text-primary-container group border-l-2 border-primary-container">
+              <a 
+                href="/CV_Mauricio_Ribotta.pdf" 
+                download="CV_Mauricio_Ribotta.pdf"
+                className="w-full bg-surface-container-high hover:bg-surface-container-highest transition-colors flex items-center justify-between p-4 font-mono text-xs text-primary-container group border-l-2 border-primary-container"
+              >
                 <div className="flex flex-col items-start">
                   <span className="text-[10px] text-on-surface-variant opacity-60">PDF_VERSION_2024</span>
                   <span className="font-bold">curl -O cv.pdf</span>
                 </div>
                 <span className="material-symbols-outlined group-hover:translate-y-1 transition-transform">download</span>
-              </button>
+              </a>
             </div>
             <div>
               <h3 className="font-mono text-xs font-bold text-secondary-container mb-4 uppercase tracking-widest">// EXTERNAL_NODES</h3>
               <div className="space-y-2">
-                <a className="flex items-center justify-between p-3 bg-surface-container-highest/30 hover:bg-surface-container-highest font-mono text-xs text-on-surface-variant hover:text-primary-container transition-all group" href="#">
+                <a className="flex items-center justify-between p-3 bg-surface-container-highest/30 hover:bg-surface-container-highest font-mono text-xs text-on-surface-variant hover:text-primary-container transition-all group" href="https://github.com/MauriicioRibotta">
                   <span>./GITHUB</span>
                   <span className="material-symbols-outlined text-sm">open_in_new</span>
                 </a>
-                <a className="flex items-center justify-between p-3 bg-surface-container-highest/30 hover:bg-surface-container-highest font-mono text-xs text-on-surface-variant hover:text-primary-container transition-all group" href="#">
+                <a className="flex items-center justify-between p-3 bg-surface-container-highest/30 hover:bg-surface-container-highest font-mono text-xs text-on-surface-variant hover:text-primary-container transition-all group" href="https://www.linkedin.com/in/mauricio-ribotta-83139327a/">
                   <span>./LINKEDIN</span>
                   <span className="material-symbols-outlined text-sm">open_in_new</span>
-                </a>
-                <a className="flex items-center justify-between p-3 bg-surface-container-highest/30 hover:bg-surface-container-highest font-mono text-xs text-on-surface-variant hover:text-primary-container transition-all group" href="#">
-                  <span>./RSS_FEED</span>
-                  <span className="material-symbols-outlined text-sm">rss_feed</span>
                 </a>
               </div>
             </div>
           </div>
           <div className="mt-12 pt-8 border-t border-outline-variant/15 space-y-4">
             <div className="font-mono text-[10px] text-on-surface-variant leading-relaxed">
-              <span className="text-secondary-container">STATUS:</span> LISTENING<br/>
-              <span className="text-secondary-container">LATENCY:</span> 14ms<br/>
+              <span className="text-secondary-container">STATUS:</span> LISTENING<br />
+              <span className="text-secondary-container">LATENCY:</span> 14ms<br />
               <span className="text-secondary-container">UPTIME:</span> 99.98%
             </div>
             <div className="w-full bg-surface-container-highest h-1">
