@@ -14,6 +14,16 @@ export function TopNavBar() {
         </div>
         <nav className="hidden md:flex h-full items-center font-mono tracking-tighter uppercase text-xs">
           <Link
+            to="/"
+            className={`h-full flex items-center px-4 transition-colors duration-150 ease-in-out hover:bg-[#00FF41]/10 hover:text-[#00FF41] ${
+              isActive('/')
+                ? 'text-[#ebffe2] border-b-2 border-[#00FF41] opacity-100'
+                : 'text-[#b9ccb2] opacity-70'
+            }`}
+          >
+            ./ROOT
+          </Link>
+          <Link
             to="/about"
             className={`h-full flex items-center px-4 transition-colors duration-150 ease-in-out hover:bg-[#00FF41]/10 hover:text-[#00FF41] ${
               isActive('/about')

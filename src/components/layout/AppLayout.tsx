@@ -1,15 +1,13 @@
 import { Outlet } from 'react-router-dom';
 import { TopNavBar } from './TopNavBar';
-import { SideNavBar } from './SideNavBar';
 import { Footer } from './Footer';
 
 export function AppLayout() {
   return (
     <div className="bg-[#10141a] text-[#dfe2eb] font-body min-h-screen">
       <TopNavBar />
-      <SideNavBar />
       
-      <main className="md:ml-64 pt-10 min-h-screen relative overflow-hidden flex items-center justify-center pb-8">
+      <main className="pt-10 min-h-screen relative overflow-hidden flex items-center justify-center pb-8">
         {/* Texture Overlays */}
         <div className="absolute inset-0 grid-overlay z-0 pointer-events-none"></div>
         <div className="absolute inset-0 scanline-overlay z-10 pointer-events-none"></div>
