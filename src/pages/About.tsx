@@ -1,0 +1,129 @@
+import { Link } from 'react-router-dom';
+
+export function About() {
+  return (
+    <div className="w-full">
+      {/* Header Section */}
+      <div className="mb-16">
+        <h1 className="font-mono text-4xl md:text-6xl font-bold text-primary-container tracking-tighter mb-4">
+          &gt;_ABOUT_ME
+        </h1>
+        <div className="h-px w-full bg-outline-variant/15"></div>
+      </div>
+
+      {/* Split Layout */}
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+        {/* Left Side: Terminal Window Frame */}
+        <div className="lg:col-span-5 w-full">
+          <div className="bg-surface-container-high shadow-none ring-1 ring-outline-variant/20">
+            {/* Terminal Header */}
+            <div className="flex items-center justify-between px-4 py-2 bg-surface-container-high">
+              <div className="flex gap-2">
+                <div className="w-2.5 h-2.5 bg-error/40"></div>
+                <div className="w-2.5 h-2.5 bg-secondary-container/40"></div>
+                <div className="w-2.5 h-2.5 bg-primary-container/40"></div>
+              </div>
+              <div className="font-mono text-[10px] text-on-surface-variant uppercase tracking-widest">AVATAR.IMG</div>
+              <div className="w-12"></div> {/* Spacer to center title */}
+            </div>
+
+            {/* Terminal Content (Inset) */}
+            <div className="bg-surface-container-lowest p-1 aspect-square relative group">
+              <img 
+                alt="System Architect Visualization" 
+                className="w-full h-full object-cover filter grayscale contrast-125 brightness-75 mix-blend-screen opacity-80 group-hover:opacity-100 transition-opacity duration-300" 
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCQDItxu9l9_ry4qOhP9-jXsAeFG1OJX9Qx-2iSh7zk_5NdS74XQh_4MQLHp4nSFhXuuGzdx3mIBoyjYYQ7aZ5c7l2oNv_mzJ4K7Zmb-3aJNJ7GYGFdIFMDShhk0fPC0I66lM07_Nf3zz9Khg5oaQi6vYoaM-HiOLX54MdTP-kG4xOn7J5xZsCghH7TFzqNumF79EwITpR9jBIKubBgofkc3DHbRvS9tazUchg7iztwCWojeKLmjvgqTb3MYsQgvYrLQCN_lFQpUba"
+              />
+              {/* Hard Overlay Grid */}
+              <div className="absolute inset-0 pointer-events-none border border-primary-container/10"></div>
+              
+              <div className="absolute top-4 left-4 font-mono text-[10px] text-primary-container bg-background/80 px-1">
+                [SCANNING_ID...]
+              </div>
+              <div className="absolute bottom-4 right-4 font-mono text-[10px] text-primary-container bg-background/80 px-1">
+                [LOCKED: ADMIN]
+              </div>
+            </div>
+          </div>
+          <div className="mt-4 font-mono text-[10px] text-on-surface-variant flex justify-between uppercase">
+            <span>SIZE: 2.4MB</span>
+            <span>FORMAT: RAW_BUFFER</span>
+          </div>
+        </div>
+
+        {/* Right Side: Bio as Code */}
+        <div className="lg:col-span-7 space-y-8">
+          <div className="font-mono text-sm leading-relaxed text-on-surface-variant">
+            {/* Section 1 */}
+            <div className="mb-8">
+              <span className="text-primary-container font-bold">// who I am</span>
+              <p className="mt-4 pl-4 border-l-2 border-outline-variant/30 text-on-surface">
+                I am a systems-level architect and full-stack engineer operating at the intersection of performance and aesthetics. My workflow is driven by the philosophy of <span className="text-primary-container">minimalist efficiency</span>—stripping away the unnecessary to reveal the core logic of complex digital ecosystems.
+              </p>
+            </div>
+
+            {/* Section 2 */}
+            <div className="mb-8">
+              <span className="text-secondary-container font-bold">/* my approach */</span>
+              <div className="mt-4 pl-4 space-y-4">
+                <p>
+                  * 1. Orthogonality is non-negotiable. Components must be decoupled, predictable, and resilient.
+                </p>
+                <p>
+                  * 2. Developer experience is user experience. Clean, documented internal structures lead to faster, safer deployment cycles.
+                </p>
+                <p>
+                  * 3. Performance as a feature. If it's not sub-100ms, it's a bug.
+                </p>
+              </div>
+            </div>
+
+            {/* Section 3: Technical Stack Output */}
+            <div className="bg-surface-container-low p-6 ring-1 ring-outline-variant/10">
+              <div className="flex items-center gap-2 mb-4">
+                <span className="material-symbols-outlined text-primary-container text-xs">terminal</span>
+                <span className="text-on-surface text-xs font-bold uppercase tracking-widest">sysctl --get-stack</span>
+              </div>
+              <div className="grid grid-cols-2 gap-y-2 text-[11px]">
+                <div className="flex items-center gap-2">
+                  <span className="text-primary-container">█</span>
+                  <span>RUST / WASM</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <span className="text-primary-container">█</span>
+                  <span>TYPESCRIPT</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <span className="text-primary-container">█</span>
+                  <span>POSTGRESQL</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <span className="text-primary-container">█</span>
+                  <span>NEOVIM_V0.10</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <span className="text-secondary-container">█</span>
+                  <span>KUBERNETES</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <span className="text-secondary-container">█</span>
+                  <span>DOCKER</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Call to Action */}
+            <div className="mt-12 flex flex-col md:flex-row gap-4">
+              <Link to="/contact" className="bg-primary-container text-on-primary-fixed px-6 py-3 font-mono font-bold text-sm uppercase transition-all hover:translate-x-1 hover:-translate-y-1 inline-block text-center shadow-[4px_4px_0px_0px_#00FF41]">
+                [ EXECUTE_COLLABORATION ]
+              </Link>
+              <Link to="/projects" className="border border-primary-container text-primary-container px-6 py-3 font-mono font-bold text-sm uppercase transition-all hover:bg-primary-container hover:text-on-primary-fixed inline-block text-center">
+                [ VIEW_SOURCE_LOGS ]
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
