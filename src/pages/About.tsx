@@ -33,9 +33,9 @@ export function About() {
             {/* Terminal Content (Inset) */}
             <div className="bg-surface-container-lowest p-1 aspect-square relative group">
               <img 
-                alt="System Architect Visualization" 
-                className="w-full h-full object-cover filter grayscale contrast-125 brightness-75 mix-blend-screen opacity-80 group-hover:opacity-100 transition-opacity duration-300" 
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCQDItxu9l9_ry4qOhP9-jXsAeFG1OJX9Qx-2iSh7zk_5NdS74XQh_4MQLHp4nSFhXuuGzdx3mIBoyjYYQ7aZ5c7l2oNv_mzJ4K7Zmb-3aJNJ7GYGFdIFMDShhk0fPC0I66lM07_Nf3zz9Khg5oaQi6vYoaM-HiOLX54MdTP-kG4xOn7J5xZsCghH7TFzqNumF79EwITpR9jBIKubBgofkc3DHbRvS9tazUchg7iztwCWojeKLmjvgqTb3MYsQgvYrLQCN_lFQpUba"
+                alt="Mauricio Ribotta" 
+                className="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-all duration-300 group-hover:scale-[1.02]" 
+                src="/recibidamauri.jpeg"
               />
               <div className="absolute inset-0 pointer-events-none border border-primary-container/10"></div>
               <div className="absolute top-4 left-4 font-mono text-[10px] text-primary-container bg-background/80 px-1">

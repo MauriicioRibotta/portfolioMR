@@ -2,6 +2,7 @@ import { createContext, useContext, useState, useCallback, type ReactNode } from
 import { en } from './en';
 import { es } from './es';
 import type { Translations } from './en';
+import { trackEvent } from '../utils/analytics';
 
 type Lang = 'en' | 'es';
 
@@ -33,6 +34,7 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
     setLang(prev => {
       const next = prev === 'en' ? 'es' : 'en';
       localStorage.setItem('portfolio-lang', next);
+      trackEvent('language_toggled', { from: prev, to: next });
       return next;
     });
   }, []);

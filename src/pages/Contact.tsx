@@ -1,4 +1,5 @@
 import { useLanguage } from '../i18n/LanguageContext';
+import { trackEvent } from '../utils/analytics';
 
 export function Contact() {
   const { lang, t } = useLanguage();
@@ -81,6 +82,7 @@ export function Contact() {
               <a 
                 href={cvHref} 
                 download={cvFilename}
+                onClick={() => trackEvent('cv_downloaded', { lang, file: cvFilename })}
                 className="w-full bg-surface-container-high hover:bg-surface-container-highest transition-colors flex items-center justify-between p-4 font-mono text-xs text-primary-container group border-l-2 border-primary-container"
               >
                 <div className="flex flex-col items-start">
@@ -93,11 +95,11 @@ export function Contact() {
             <div>
               <h3 className="font-mono text-xs font-bold text-secondary-container mb-4 uppercase tracking-widest">{t('contact.external_title')}</h3>
               <div className="space-y-2">
-                <a className="flex items-center justify-between p-3 bg-surface-container-highest/30 hover:bg-surface-container-highest font-mono text-xs text-on-surface-variant hover:text-primary-container transition-all group" href="https://github.com/MauriicioRibotta">
+                <a className="flex items-center justify-between p-3 bg-surface-container-highest/30 hover:bg-surface-container-highest font-mono text-xs text-on-surface-variant hover:text-primary-container transition-all group" href="https://github.com/MauriicioRibotta" onClick={() => trackEvent('social_click', { platform: 'github' })}>
                   <span>./GITHUB</span>
                   <span className="material-symbols-outlined text-sm">open_in_new</span>
                 </a>
-                <a className="flex items-center justify-between p-3 bg-surface-container-highest/30 hover:bg-surface-container-highest font-mono text-xs text-on-surface-variant hover:text-primary-container transition-all group" href="https://www.linkedin.com/in/mauricio-ribotta-83139327a/">
+                <a className="flex items-center justify-between p-3 bg-surface-container-highest/30 hover:bg-surface-container-highest font-mono text-xs text-on-surface-variant hover:text-primary-container transition-all group" href="https://www.linkedin.com/in/mauricio-ribotta-83139327a/" onClick={() => trackEvent('social_click', { platform: 'linkedin' })}>
                   <span>./LINKEDIN</span>
                   <span className="material-symbols-outlined text-sm">open_in_new</span>
                 </a>
