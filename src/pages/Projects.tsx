@@ -168,15 +168,15 @@ export function Projects() {
                     <h4 className="text-[10px] font-mono text-secondary-container mb-2 uppercase">{t('projects.p3_perf_label')}</h4>
                     <div className="space-y-2 mt-2">
                       <div className="flex justify-between text-[10px] font-mono">
-                        <span>LATENCY</span>
-                        <span className="text-primary-container">0.02ms</span>
+                        <span>EFFICIENCY</span>
+                        <span className="text-primary-container">+85%</span>
                       </div>
                       <div className="w-full h-1 bg-surface-container-highest">
-                        <div className="bg-primary-container h-full w-[95%]"></div>
+                        <div className="bg-primary-container h-full w-[85%]"></div>
                       </div>
                       <div className="flex justify-between text-[10px] font-mono">
-                        <span>CPU_LOAD</span>
-                        <span className="text-secondary-container">1.2%</span>
+                        <span>AUTOMATION</span>
+                        <span className="text-secondary-container">100%</span>
                       </div>
                     </div>
                   </div>
