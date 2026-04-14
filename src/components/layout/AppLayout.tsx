@@ -7,13 +7,13 @@ export function AppLayout() {
     <div className="bg-[#10141a] text-[#dfe2eb] font-body min-h-screen">
       <TopNavBar />
       
-      <main role="main" className="pt-10 min-h-screen relative overflow-hidden flex items-center justify-center pb-8">
+      <main role="main" className="pt-16 min-h-screen relative overflow-x-hidden flex flex-col items-center pb-16">
         {/* Texture Overlays */}
         <div className="absolute inset-0 grid-overlay z-0 pointer-events-none"></div>
         <div className="absolute inset-0 scanline-overlay z-10 pointer-events-none"></div>
         
         {/* Route Content Area */}
-        <section className="relative z-20 w-full max-w-5xl px-4 md:px-12 mt-12 mb-20 animate-fade-in">
+        <section className="relative z-20 w-full max-w-5xl px-4 md:px-12 mt-6 mb-24 animate-fade-in flex-1">
           <Outlet />
         </section>
 

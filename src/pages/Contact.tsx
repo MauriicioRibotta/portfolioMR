@@ -11,7 +11,7 @@ export function Contact() {
     <div className="w-full">
       {/* Hero Header */}
       <header className="mb-12">
-        <h1 className="font-label text-4xl md:text-6xl font-extrabold text-primary-container tracking-tighter mb-4">
+        <h1 className="font-label text-4xl md:text-6xl font-extrabold text-primary-container tracking-tighter mb-4 break-all md:break-normal">
           {t('contact.title')}
         </h1>
         <p className="font-mono text-on-surface-variant text-sm md:text-base max-w-2xl">
@@ -82,6 +82,8 @@ export function Contact() {
               <a 
                 href={cvHref} 
                 download={cvFilename}
+                target="_blank"
+                rel="noopener noreferrer"
                 onClick={() => trackEvent('cv_downloaded', { lang, file: cvFilename })}
                 className="w-full bg-surface-container-high hover:bg-surface-container-highest transition-colors flex items-center justify-between p-4 font-mono text-xs text-primary-container group border-l-2 border-primary-container"
               >

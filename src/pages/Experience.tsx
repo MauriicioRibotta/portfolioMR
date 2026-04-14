@@ -12,7 +12,7 @@ export function Experience() {
   return (
     <div className="w-full">
       <div className="mb-12">
-        <h1 className="font-mono text-4xl font-bold text-primary-container mb-2 tracking-tighter uppercase">
+        <h1 className="font-mono text-4xl font-bold text-primary-container mb-2 tracking-tighter uppercase break-all md:break-normal">
           {t('experience.title')}
         </h1>
         <p className="font-mono text-xs text-on-surface-variant opacity-70">{t('experience.subtitle')}</p>

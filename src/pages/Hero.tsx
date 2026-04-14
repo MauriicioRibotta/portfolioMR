@@ -22,7 +22,7 @@ export function Hero() {
         <div className="space-y-6">
           <div className="flex items-start gap-4">
             <span className="text-[#00ff41] font-headline text-2xl md:text-4xl">$</span>
-            <h1 className="font-headline text-3xl md:text-6xl text-[#ebffe2] font-extrabold tracking-tight">
+            <h1 className="font-headline text-3xl md:text-6xl text-[#ebffe2] font-extrabold tracking-tight break-words md:break-normal">
               {t('hero.greeting')} <span className="text-[#00ff41]">&gt;</span> {t('hero.tagline')}<span className="inline-block w-4 h-8 md:w-8 md:h-12 bg-[#00ff41] ml-2 cursor-blink"></span>
             </h1>
           </div>

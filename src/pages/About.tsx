@@ -8,7 +8,7 @@ export function About() {
     <div className="w-full">
       {/* Header Section */}
       <div className="mb-16">
-        <h1 className="font-mono text-4xl md:text-6xl font-bold text-primary-container tracking-tighter mb-4">
+        <h1 className="font-mono text-4xl md:text-6xl font-bold text-primary-container tracking-tighter mb-4 break-all md:break-normal">
           {t('about.title')}
         </h1>
         <div className="h-px w-full bg-outline-variant/15"></div>

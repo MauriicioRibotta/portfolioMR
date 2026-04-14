@@ -7,7 +7,7 @@ export function Skills() {
     <div className="w-full">
       {/* Hero Header */}
       <header className="mb-16">
-        <h1 className="font-mono text-4xl md:text-6xl font-extrabold text-primary-container tracking-tighter mb-4 uppercase">
+        <h1 className="font-mono text-4xl md:text-6xl font-extrabold text-primary-container tracking-tighter mb-4 uppercase break-all md:break-normal">
           {t('skills.title')}
         </h1>
         <p className="text-on-surface-variant font-mono text-sm uppercase tracking-widest">
@@ -31,7 +31,7 @@ export function Skills() {
                 <span className="text-on-surface">JavaScript/TypeScript</span>
                 <span className="text-primary-container">92%</span>
               </div>
-              <div className="h-6 bg-surface-container-lowest flex items-center px-1">
+              <div className="h-6 bg-surface-container-lowest flex items-center px-1 overflow-hidden">
                 <div className="flex gap-0.5 w-full">
                   <span className="text-primary-container text-lg leading-none">██████████████████████████████</span>
                   <span className="text-surface-container-high text-lg leading-none">██</span>
@@ -44,7 +44,7 @@ export function Skills() {
                 <span className="text-on-surface">React/Next.js</span>
                 <span className="text-primary-container">88%</span>
               </div>
-              <div className="h-6 bg-surface-container-lowest flex items-center px-1">
+              <div className="h-6 bg-surface-container-lowest flex items-center px-1 overflow-hidden">
                 <div className="flex gap-0.5 w-full">
                   <span className="text-primary-container text-lg leading-none">████████████████████████████</span>
                   <span className="text-surface-container-high text-lg leading-none">████</span>
@@ -57,7 +57,7 @@ export function Skills() {
                 <span className="text-on-surface">Node.js/Express</span>
                 <span className="text-primary-container">75%</span>
               </div>
-              <div className="h-6 bg-surface-container-lowest flex items-center px-1">
+              <div className="h-6 bg-surface-container-lowest flex items-center px-1 overflow-hidden">
                 <div className="flex gap-0.5 w-full">
                   <span className="text-primary-container text-lg leading-none">████████████████████████</span>
                   <span className="text-surface-container-high text-lg leading-none">████████</span>
@@ -70,7 +70,7 @@ export function Skills() {
                 <span className="text-on-surface">PostgreSQL/Redis</span>
                 <span className="text-primary-container">70%</span>
               </div>
-              <div className="h-6 bg-surface-container-lowest flex items-center px-1">
+              <div className="h-6 bg-surface-container-lowest flex items-center px-1 overflow-hidden">
                 <div className="flex gap-0.5 w-full">
                   <span className="text-primary-container text-lg leading-none">██████████████████████</span>
                   <span className="text-surface-container-high text-lg leading-none">██████████</span>
@@ -101,7 +101,7 @@ export function Skills() {
                 <span className="text-on-surface">Agile/Scrum Methodologies</span>
                 <span className="text-secondary-container">95%</span>
               </div>
-              <div className="h-6 bg-surface-container-lowest flex items-center px-1">
+              <div className="h-6 bg-surface-container-lowest flex items-center px-1 overflow-hidden">
                 <div className="flex gap-0.5 w-full">
                   <span className="text-secondary-container text-lg leading-none">███████████████████████████████</span>
                   <span className="text-surface-container-high text-lg leading-none">█</span>
@@ -114,7 +114,7 @@ export function Skills() {
                 <span className="text-on-surface">Jira / Backlog Mgmt</span>
                 <span className="text-secondary-container">90%</span>
               </div>
-              <div className="h-6 bg-surface-container-lowest flex items-center px-1">
+              <div className="h-6 bg-surface-container-lowest flex items-center px-1 overflow-hidden">
                 <div className="flex gap-0.5 w-full">
                   <span className="text-secondary-container text-lg leading-none">█████████████████████████████</span>
                   <span className="text-surface-container-high text-lg leading-none">███</span>
@@ -127,7 +127,7 @@ export function Skills() {
                 <span className="text-on-surface">Stakeholder Management</span>
                 <span className="text-secondary-container">82%</span>
               </div>
-              <div className="h-6 bg-surface-container-lowest flex items-center px-1">
+              <div className="h-6 bg-surface-container-lowest flex items-center px-1 overflow-hidden">
                 <div className="flex gap-0.5 w-full">
                   <span className="text-secondary-container text-lg leading-none">██████████████████████████</span>
                   <span className="text-surface-container-high text-lg leading-none">██████</span>
@@ -140,7 +140,7 @@ export function Skills() {
                 <span className="text-on-surface">Notion / Documentation</span>
                 <span className="text-secondary-container">88%</span>
               </div>
-              <div className="h-6 bg-surface-container-lowest flex items-center px-1">
+              <div className="h-6 bg-surface-container-lowest flex items-center px-1 overflow-hidden">
                 <div className="flex gap-0.5 w-full">
                   <span className="text-secondary-container text-lg leading-none">████████████████████████████</span>
                   <span className="text-surface-container-high text-lg leading-none">████</span>
